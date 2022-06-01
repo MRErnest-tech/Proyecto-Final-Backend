@@ -49,3 +49,7 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+$routes->get('personas', 'Personas::index');
+$routes->get('crear', 'Personas::crear');
+$routes->post('guardar', 'Personas::guardar'); 

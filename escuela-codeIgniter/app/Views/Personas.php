@@ -7,7 +7,6 @@
 </head>
 <body>
     Lista de personas
-    <?php foreach ($personas as $persona) ?>
-    <p><?= $persona->nombre ?></p> 
+    <?php print_r($personas); ?>
 </body>
 </html>
